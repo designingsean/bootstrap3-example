@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Real estate - Bootstrap</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"><!-- start header -->
+                <span>col-sm-6</span>
+            </div>
+            <div class="col-sm-6">
+                <span>col-sm-6</span>
+            </div><!-- end header -->
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12"><!-- start nav -->
+                <div class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="listings.html" class="first">For sale</a></li>
+                            <li><a href="map_properties.html">To rent</a></li>
+                            <li><a href="compare.html">New homes</a></li>
+                            <li><a href="property.html">Property of the day</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Property pages <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="listings.html">Property listings</a></li>
+                                    <li><a href="map_properties.html">Properties map</a></li>
+                                    <li><a href="property.html">Single property</a></li>
+                                    <li><a href="compare.html">Compare properties</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other pages <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="terms.html">Terms and conditions</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign Up<strong class="caret"></strong></a>
+                                <div class="dropdown-menu">
+                                    <form action="index.html" method="post">
+                                        <input type="text" name="user[username]" placeholder="Full name" size="30" />
+                                        <input type="password" name="user[password]" placeholder="Email" size="30" />
+                                        <input type="password" name="user[password]" placeholder="Password" size="30" />
+                                        <input class="btn btn-primary" type="submit" name="commit" value="Sign Up" />
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+                                <div class="dropdown-menu">
+                                    <form action="index.html" method="post">
+                                        <input type="text" name="user[username]" placeholder="Username or email" size="30" />
+                                        <input type="password" name="user[password]" placeholder="Password" size="30" />
+                                        <input id="remember_me" type="checkbox" name="user[remember_me]" value="1" />
+                                        <label class="string optional"> Remember me</label>
+                                        <input class="btn btn-primary" type="submit" name="commit" value="Sign In" />
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- /navbar-collapse -->
+                </div><!-- /navbar -->
+            </div><!-- end nav -->
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4"><!-- form -->
+                <form class="well clearfix" action="listings.html">
+                    <div class="form-group">
+                        <label for="focusedInput">Location</label>
+                        <input type="text" value="" placeholder="Where do you want to live?" id="focusedInput" class="form-control input-lg">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="focusedInput">Search radius:</label>
+                            <select class="form-control input-sm">
+                                <option>This area only</option>
+                                <option>Within 1/4 mile</option>
+                                <option>Within 1/2 mile</option>
+                                <option>Within 1 mile</option>
+                                <option>Within 3 miles</option>
+                                <option>Within 5 miles</option>
+                                <option>Within 10 miles</option>
+                                <option>Within 15 miles</option>
+                                <option>Within 20 miles</option>
+                                <option>Within 30 miles</option>
+                                <option>Within 40 miles</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="focusedInput">Property type:</label>
+                            <select class="form-control input-sm">
+                                <option>Any</option>
+                                <option>Houses</option>
+                                <option>Flats/ Apartments</option>
+                                <option>Bungalows</option>
+                                <option>Land</option>
+                                <option>Commercial property</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="focusedInput">Bedrooms:</label>
+                            <select class="form-control input-sm">
+                                <option>Any</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5+</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="focusedInput">Rent or Buy</label>
+                            <select class="form-control input-sm">
+                                <option>Any</option>
+                                <option>Rent</option>
+                                <option>Buy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="focusedInput">Minimum Price</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control input-sm">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="focusedInput">Maximum Price</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control input-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary pull-right" type="submit">Search</button>
+                </form>
+            </div><!-- /form -->
+            <div class="col-sm-8"><!-- carousel -->
+                <span>col-sm-8</span>
+            </div><!-- /carousel -->
+        </div>
+        <div class="row">
+            <div class="col-sm-4"><!-- highlights -->
+                <span>col-sm-4</span>
+            </div>
+            <div class="col-sm-4">
+                <span>col-sm-4</span>
+            </div>
+            <div class="col-sm-4">
+                <span>col-sm-4</span>
+            </div><!-- /highlights -->
+        </div>
+        <div class="row">
+            <div class="col-sm-4"><!-- map -->
+                <span>col-sm-4</span>
+            </div><!-- /map -->
+            <div class="col-sm-8"><!-- featured -->
+                <h3>Featured listings</h3>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Region</th>
+                            <th>Price</th>
+                            <th>Days on market</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="property.html">8 bedroom house for sale</a></td>
+                            <td>London</td>
+                            <td>&pound;39,950,000</td>
+                            <td>1 day</td>
+                            <td><a href="property.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="property.html">2 bedroom bungalow for sale</a></td>
+                            <td>London</td>
+                            <td>&pound;215,000</td>
+                            <td>3 days</td>
+                            <td><a href="property.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="property.html">3 bedroom house for sale</a></td>
+                            <td>London</td>
+                            <td>&pound;470,000</td>
+                            <td>2 weeks</td>
+                            <td><a href="property.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="property.html">3 bedroom house for rent</a></td>
+                            <td>London</td>
+                            <td>&pound;1,000pm</td>
+                            <td>1 month</td>
+                            <td><a href="property.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="property.html">6 bedroom house for sale</a></td>
+                            <td>London</td>
+                            <td>&pound;19,950,000</td>
+                            <td>2 months</td>
+                            <td><a href="property.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="property.html">5 bedroom bungalow for sale</a></td>
+                            <td>London</td>
+                            <td>&pound;950pm</td>
+                            <td>3 months</td>
+                            <td><a href="property.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="property.html">3 bedroom house for sale</a></td>
+                            <td>London</td>
+                            <td>&pound;470,000</td>
+                            <td>1 year</td>
+                            <td><a href="property.html">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>More cities: <a href="map_properties.html">London</a>, <a href="map_properties.html">Scotland</a>, <a href="map_properties.html">Wales</a>, <a href="map_properties.html">Northern Ireland</a>, <a href="map_properties.html">Birmingham</a>, <a href="map_properties.html">Leeds</a>, <a href="map_properties.html">Glasgow</a>, <a href="map_properties.html">Sheffield</a>, <a href="map_properties.html">Bradford</a>, <a href="map_properties.html">Edinburgh</a>, <a href="map_properties.html">Liverpool</a>,  <a href="map_properties.html">Manchester</a></p>
+            </div><!-- /featured -->
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <span>col-sm-12</span>
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+    <script type="text/javascript" src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
